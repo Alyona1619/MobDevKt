@@ -1,0 +1,1 @@
+![pic](https://github.com/Alyona1619/MobDevKt/tree/main/FiguresKt/figures.png)
