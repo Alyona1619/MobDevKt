@@ -1,9 +1,43 @@
 
-fun moveRobot(robot: Robot, toX: Int, toY: Int) {
-    robot.x = toX
-    robot.y = toY
-    robot.direction = Direction.UP
+fun moveRobot(robot: Robot, toX: Int, toY: Int){
+    while (robot.x != toX || robot.y != toY) {
+        when (robot.direction) {
+            Direction.RIGHT -> {
+                if (robot.x < toX) {
+                    robot.stepForward()
+                } else {
+                    robot.turnLeft()
+                }
+            }
+            Direction.LEFT -> {
+                if (robot.x > toX) {
+                    robot.stepForward()
+                } else {
+                    robot.turnLeft()
+                }
+            }
+            Direction.UP -> {
+                if (robot.y < toY) {
+                    robot.stepForward()
+                } else {
+                    robot.turnLeft()
+                }
+            }
+            Direction.DOWN -> {
+                if (robot.y > toY) {
+                    robot.stepForward()
+                } else {
+                    robot.turnLeft()
+                }
+            }
+        }
+    }
+
+    while (robot.direction != Direction.UP) {
+        robot.turnLeft()
+    }
 }
+
 
 fun main() {
     val WALL_E = Robot(3, 4, Direction.UP)
