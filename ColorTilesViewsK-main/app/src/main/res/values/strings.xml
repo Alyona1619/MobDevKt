@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ColorTilesViewsK</string>
+    <string name="restart">Перезапустить</string>
+    <string name="solve">Пройти игру</string>
+</resources>
