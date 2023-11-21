@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         initField()
+
     }
 
     fun getCoordFromString(s: String): Coord {
@@ -75,6 +76,7 @@ class MainActivity : AppCompatActivity() {
             changeColor(tiles[coord.y][i])
             changeColor(tiles[i][coord.x])
         }
+        checkVictory()
     }
 
     fun checkVictory(): Boolean {
