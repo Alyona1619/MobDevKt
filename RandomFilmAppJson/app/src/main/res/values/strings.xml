@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RandomFilmApp</string>
+    <string name="rand_film">Показать случайный фильм</string>
+    <string name="reset">Сброс</string>
+</resources>
