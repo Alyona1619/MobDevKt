@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GuessTheNumber</string>
+    <string name="guess">Guess</string>
+    <string name="yes">YES</string>
+    <string name="no">No</string>
+    <string name="restart">Перезапустить</string>
+    <string name="beginHint">Начало диапазона</string>
+    <string name="endHint">Конец диапазона</string>
+</resources>
