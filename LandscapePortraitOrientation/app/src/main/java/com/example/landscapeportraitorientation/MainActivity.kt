@@ -3,25 +3,23 @@ package com.example.landscapeportraitorientation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Adapter
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.Toast
-import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 
 class MainActivity : AppCompatActivity(),AdapterView.OnItemSelectedListener {
     lateinit var adapter: ArrayAdapter<CharSequence>
-    private lateinit var pictures: IntArray
-    private var currentPosition = 0
+    private lateinit var pics: IntArray
+    private var currPic = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        pictures = intArrayOf(R.drawable.car1, R.drawable.car2, R.drawable.car3)
+        pics = intArrayOf(R.drawable.car1, R.drawable.car2, R.drawable.car3)
 
 
         adapter = ArrayAdapter.createFromResource(this, R.array.pictures, R.layout.item)
@@ -30,22 +28,22 @@ class MainActivity : AppCompatActivity(),AdapterView.OnItemSelectedListener {
         spinner.onItemSelectedListener = this
     }
 
-    fun onChangePictureClick(v: View) {
+    fun onChangePictureClick() {
         val iv = findViewById<ImageView>(R.id.picture)
-        currentPosition = (currentPosition + 1) % pictures.size
-        iv.setImageResource(pictures[currentPosition])
+        currPic = (currPic + 1) % 3
+        iv.setImageResource(pics[currPic])
 
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        Toast.makeText(this, "Item selected: $position", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Выбран элемент: $position", Toast.LENGTH_SHORT).show()
         val iv = findViewById<ImageView>(R.id.picture)
-        iv.setImageResource(pictures[position])
-        currentPosition = position
+        iv.setImageResource(pics[position])
+        currPic = position
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
-        Toast.makeText(this, "Item not selected", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Элемент не выбран", Toast.LENGTH_SHORT).show()
         val iv = findViewById<ImageView>(R.id.picture)
         iv.setImageResource(R.drawable.squarecat)
     }
