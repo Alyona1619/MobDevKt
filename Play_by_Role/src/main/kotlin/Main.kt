@@ -9,9 +9,9 @@ fun main() {
         roles.add(sc.nextLine())
 
     val textLines = arrayListOf<String>()
-    val textSc = Scanner(FileInputStream("src/main/resources/textLines"))
-    while (textSc.hasNextLine())
-        textLines.add(textSc.nextLine())
+    val sc2 = Scanner(FileInputStream("src/main/resources/textLines"))
+    while (sc2.hasNextLine())
+        textLines.add(sc2.nextLine())
 
     val roleLinesMap = mutableMapOf<String, MutableList<Pair<Int, String>>>()
 
