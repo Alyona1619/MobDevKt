@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="64dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp">
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/c0"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/c4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c7"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/c8"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c9"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c10"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c11"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/c12"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c13"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c14"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+
+            <ImageView
+                android:id="@+id/c15"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:contentDescription="@string/description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squarecat" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:text="@string/new_game"
+        android:textSize="20sp"
+        android:onClick="reset"/>
+
+</LinearLayout>
